@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>check ecma</h1>
+<label for="ecmaInput">Nhap cau tra loi:</label>
+<input type="text" id="ecmaInput">
+<button onclick="check()">Check</button>
+<p id="result">
+
+</p>
+
+<script>
+    function check() {
+        const ecma = document.getElementById("ecmaInput").value;
+        const resultE = document.getElementById("result");
+
+        if (ecma === "ECMAScript") {
+            resultE.innerHTML =  " Right !.";
+        } else {
+            resultE.innerHTML =   " Didn’t know? ECMAScript.";
+        }
+    }
+</script>
+</body>
+</html>
+
+
